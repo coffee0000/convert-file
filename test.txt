@@ -1,0 +1,412 @@
+# 第一章：Claude Code 是什么
+
+## Claude Code 的出现，并不是因为 AI 更聪明了，而是因为软件开发发生了变化。
+
+近年来，大语言模型（LLM）的快速发展，使 AI 已经具备了优秀的代码理解与生成能力。从 ChatGPT、Claude 到 Gemini，越来越多的开发者开始借助 AI 辅助编程。
+
+过去，我们更多的是把 AI 当作一个"代码生成工具"。
+
+例如：
+
+* 帮我写一个 API。
+* 帮我解释这段代码。
+* 帮我修复一个 Bug。
+
+整个交互过程几乎都是：
+
+```text
+Prompt
+
+↓
+
+Response
+```
+
+AI 擅长回答问题，也擅长生成代码。
+
+但是，当我们真正开始在项目中使用 AI 时，一个新的问题出现了。
+
+**软件开发的目标，从来不是生成代码，而是交付软件（Deliver Software）。**
+
+一个真实的软件开发任务往往包括：
+
+* 阅读已有代码；
+* 理解整个项目结构；
+* 分析需求；
+* 修改多个模块；
+* 执行 Build 与 Test；
+* 根据结果不断修正；
+* 最终完成整个开发任务。
+
+代码生成，只是整个开发流程中的一个步骤。
+
+真正的软件开发，是围绕**任务（Task）**展开，而不是围绕**代码（Code）**展开。
+
+于是，AI Coding 开始进入一个新的阶段。
+
+AI 不再只是回答问题，而是开始参与整个开发过程。
+
+正是在这样的背景下，Anthropic 推出了 **Claude Code**。
+
+Claude Code 并不是一个新的大语言模型，而是建立在 Claude Model 之上的 **AI Coding Agent**。
+
+这里需要区分两个概念。
+
+Claude Sonnet、Claude Opus 等属于 Large Language Model（LLM），负责语言理解、推理以及代码生成。
+
+Claude Code 则负责：
+
+* 理解整个代码仓库（Codebase）
+* 与开发环境交互
+* 修改多个文件
+* 执行 Terminal Command
+* 调用 Git
+* Build
+* Test
+* 验证结果
+
+换句话说：
+
+> **Claude Model 负责思考（Think），Claude Code 负责执行（Act）。**
+
+例如：
+
+当开发者提出：
+
+> **"请实现一个登录功能。"**
+
+Claude Code 并不会直接生成 Login API。
+
+它首先理解整个项目，分析已有代码，制定开发计划，完成多个文件修改，执行测试，并根据测试结果继续调整，直到整个开发任务完成。
+
+整个过程可以概括为：
+
+```text
+开发目标
+
+↓
+
+理解项目
+
+↓
+
+分析需求
+
+↓
+
+制定计划
+
+↓
+
+修改代码
+
+↓
+
+Build / Test
+
+↓
+
+验证结果
+
+↓
+
+完成任务
+```
+
+可以看到，Claude Code 所代表的变化，并不是模型更强了。
+
+真正改变的是：
+
+> **AI Coding 的最小工作单元，已经从"代码（Code）"变成了"任务（Task）"。**
+
+AI 不再只是生成代码，而是真正开始参与软件开发。
+
+---
+
+# 第二章：Claude Code 为什么这么强
+
+如果说第一章回答的是：
+
+> Claude Code 是什么？
+
+那么第二章回答的问题就是：
+
+> **Claude Code 为什么能够完成开发任务？**
+
+Claude Code 的强大，并不仅仅来自 Claude 模型。
+
+真正让它发生变化的是：
+
+**AI 第一次拥有了完整的软件开发能力。**
+
+它不仅能够"思考"，还能够"行动"。
+
+目前，Claude Code 已经具备了参与软件开发全过程的大部分能力。
+
+例如：
+
+## Agent Workflow
+
+Claude Code 不再是一问一答。
+
+它会围绕一个目标，自主规划多个步骤。
+
+理解需求。
+
+制定计划。
+
+执行任务。
+
+验证结果。
+
+必要时继续修正。
+
+整个过程形成完整的 Agent Workflow。
+
+---
+
+## Tool Use（MCP）
+
+Claude Code 不再局限于代码编辑器。
+
+它可以连接：
+
+* GitHub
+* Jira
+* Slack
+* Database
+* AWS
+* 企业内部系统
+
+AI 开始真正接入整个开发环境。
+
+---
+
+## Development Environment
+
+Claude Code 可以直接：
+
+* 修改文件；
+* 调用 Git；
+* 执行 Shell Command；
+* Build；
+* Test；
+* Debug。
+
+开发者每天使用的工具，Claude Code 也可以使用。
+
+---
+
+## Claude Code Action
+
+Claude Code 的能力不仅停留在个人开发。
+
+它还可以进入团队开发流程。
+
+例如：
+
+* Pull Request
+* Code Review
+* CI/CD
+
+AI 开始成为团队协作的一部分。
+
+---
+
+## Context Engineering
+
+为了保证开发的一致性，Claude Code 提供了丰富的上下文管理能力。
+
+例如：
+
+* CLAUDE.md
+* Rules
+* Skills
+* Hooks
+
+开发规范、项目知识、最佳实践，都可以持续沉淀。
+
+AI 每一次开发，都可以建立在已有知识之上，而不是重新开始。
+
+---
+
+可以看到。
+
+Claude Code 已经拥有：
+
+* 推理能力；
+* 工具能力；
+* 自动执行能力；
+* 团队协作能力；
+* 知识复用能力。
+
+AI 第一次真正拥有了参与软件开发的大部分能力。
+
+那么，一个新的问题出现了。
+
+**Claude Code 已经这么强了，为什么后来又提出了 Spec-Driven Development？**
+
+---
+
+# 第三章：为什么会出现 Spec-Driven Development
+
+很多开发者第一次接触 SDD 时，都会产生一个疑问。
+
+Claude Code 已经可以：
+
+* 理解项目；
+* 修改代码；
+* 调用工具；
+* 执行测试；
+
+为什么还需要一种新的开发方式？
+
+答案其实很简单。
+
+**真正限制 AI 的，已经不是模型能力，而是开发目标本身。**
+
+例如：
+
+开发者说：
+
+> **"请实现一个登录功能。"**
+
+对于开发者来说，这句话很简单。
+
+但是对于 AI 来说，它包含了大量没有表达出来的信息。
+
+例如：
+
+* JWT 还是 Session？
+* PostgreSQL 还是 MySQL？
+* 是否需要 MFA？
+* 登录失败返回什么？
+* 是否记录日志？
+* 是否需要单元测试？
+
+于是，大多数开发者开始不断补充 Prompt。
+
+一句不够。
+
+两句。
+
+三句。
+
+几十句。
+
+最终，一个复杂任务可能需要几百行 Prompt。
+
+Prompt 越来越长。
+
+越来越复杂。
+
+但是，Prompt 天生就是一次性的。
+
+它适合回答一个问题。
+
+却很难支撑一个持续数周、数月的软件项目。
+
+软件开发是不断演进的。
+
+需求会变化。
+
+团队会变化。
+
+AI 模型也会变化。
+
+如果所有知识都保存在 Prompt 里面，
+
+那么：
+
+知识无法沉淀。
+
+无法共享。
+
+无法版本管理。
+
+也无法持续维护。
+
+所以，真正需要管理的，不再是 Prompt。
+
+而是开发知识本身。
+
+过去：
+
+> **Knowledge lives in prompts.**
+
+现在：
+
+> **Knowledge lives in specifications.**
+
+也就是说：
+
+过去，我们希望 AI 记住 Prompt。
+
+现在，我们希望团队维护 Spec。
+
+Prompt 告诉 AI：
+
+> **要做什么（What to do）。**
+
+Specification 告诉 AI：
+
+> **什么才算完成（What should be true）。**
+
+因此：
+
+> **不要花更多时间优化 Prompt。**
+
+> **而应该花更多时间定义 Specification。**
+
+Spec 不属于某一个人。
+
+也不属于某一次对话。
+
+它属于整个项目。
+
+成为开发者与 AI 共同遵循的唯一事实来源（Single Source of Truth）。
+
+这，就是 Spec-Driven Development。
+
+它并不是一种新的 AI 工具。
+
+也不是 Claude Code 的替代品。
+
+而是一种 AI 时代的软件开发方法。
+
+Claude Code 解决的是：
+
+> **谁来开发（Who implements）。**
+
+Spec-Driven Development 解决的是：
+
+> **按照什么开发（What defines correctness）。**
+
+当开发目标足够清晰时，Claude Code 才能真正发挥 Agent 的价值。
+
+---
+
+## 我对这三个章节最满意的地方
+
+它们其实串成了一条完整的故事线：
+
+```text
+AI 会写代码
+
+        ↓
+
+AI 开始完成开发任务（Claude Code）
+
+        ↓
+
+开发越来越复杂
+
+        ↓
+
+真正需要管理的是开发知识，而不是 Prompt
+
+        ↓
+
+Spec-Driven Development
+```
+
